@@ -1,0 +1,121 @@
+on:
+  schedule:
+    - cron: '10 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  syncing_files:
+    runs-on: ubuntu-latest
+    name: Syncing blacklists without IP
+    steps:
+    - name: Checkout repository
+      id: checkout
+      uses: actions/checkout@v2
+    - name: Syncing Abuse list
+      id: sync_abuse_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/abuse-nl.txt
+        file_in_repo: external/blacklists/abuse/abuse.txt
+    - name: Syncing Ads list
+      id: sync_ads_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/ads-nl.txt
+        file_in_repo: external/blacklists/ads/ads.txt
+    - name: Syncing Crypto list
+      id: sync_crypto_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/crypto-nl.txt
+        file_in_repo: external/blacklists/crypto/crypto.txt
+    - name: Syncing Drugs list
+      id: sync_drugs_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/drugs-nl.txt
+        file_in_repo: external/blacklists/drugs/drugs.txt
+    - name: Syncing Facebook list
+      id: sync_facebook_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/facebook-nl.txt
+        file_in_repo: external/blacklists/social-media/facebook.txt
+    - name: Syncing Fraud list
+      id: sync_fraud_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/fraud-nl.txt
+        file_in_repo: external/blacklists/fraud/fraud.txt                
+    - name: Syncing Gambling list
+      id: sync_gambling_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/gambling-nl.txt
+        file_in_repo: external/blacklists/gambling/gambling.txt        
+    - name: Syncing Malware list
+      id: sync_malware_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/malware-nl.txt
+        file_in_repo: external/blacklists/malware/malware.txt
+    - name: Syncing Pishing list
+      id: sync_pishing_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/phishing-nl.txt
+        file_in_repo: external/blacklists/pishing/pishing.txt
+    - name: Syncing Piracy list
+      id: sync_piracy_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/piracy-nl.txt
+        file_in_repo: external/blacklists/piracy/piracy.txt
+    - name: Syncing Porn list
+      id: sync_porn_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/porn-nl.txt
+        file_in_repo: external/blacklists/porn/porn.txt
+    - name: Syncing Ransomware list
+      id: sync_ransomware_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/ransomware-nl.txt
+        file_in_repo: external/blacklists/ransomware/ransomware.txt
+    - name: Syncing Redirect list
+      id: sync_redirect_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/redirect-nl.txt
+        file_in_repo: external/blacklists/redirect/redirect.txt
+    - name: Syncing Scam list
+      id: sync_scam_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/scam-nl.txt
+        file_in_repo: external/blacklists/scam/scam.txt
+    - name: Syncing Tiktok list
+      id: sync_tiktok_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/tiktok-nl.txt
+        file_in_repo: external/blacklists/social-media/tiktok.txt
+    - name: Syncing Torrent list
+      id: sync_torrent_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/torrent-nl.txt
+        file_in_repo: external/blacklists/torrent/torrent.txt
+    - name: Syncing Tracking list
+      id: sync_tracking_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/tracking-nl.txt
+        file_in_repo: external/blacklists/tracking/tracking.txt
+    - name: Syncing Youtube list
+      id: sync_youtube_list
+      uses: rubencom/sync-remote-file-with-local-file-docker-action@v1.0
+      with:
+        url: https://blocklistproject.github.io/Lists/alt-version/youtube-nl.txt
+        file_in_repo: external/blacklists/social-media/youtube.txt

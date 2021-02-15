@@ -1,3 +1,4 @@
+
 #------------------------------------[UPDATE]--------------------------------------
 # Title: The Block List Project
 # Expires: 1 day
@@ -75589,7 +75590,7 @@ herbeauty.info
 herbisttjojeo.download
 hercules.iad.appboy.com
 herdethi.net
-here.com
+# here.com Reddit issue
 heredeutschlandgmbh.d1.sc.omtrdc.net
 herezera.com
 heritagecu.ca.102.112.2o7.net
@@ -93064,7 +93065,7 @@ miner.cinemafacil.com
 miner.cryptobara.com
 miner.nablabee.com
 miner.oozing.co
-miner.pr0gramm.com
+# miner.pr0gramm.com Issue 194
 miner.rocks
 minerad.com
 mineralt.io
@@ -128944,7 +128945,7 @@ tracker.thinkindot.com
 tracker.timesgroup.com
 tracker.tintucvietnam.vn
 tracker.trackerbox.com
-tracker.trackerfix.com
+# tracker.trackerfix.com Issue 202
 tracker.tradedoubler.com
 tracker.truehits.in.th
 tracker.truehits.net
@@ -141606,7 +141607,7 @@ whegadry.com
 whehilru.com
 whenu.com
 whenupgrade.yourmainsourceforcontentprepared.win
-where.com
+# where.com Reddit issue
 whereapps.com
 wheredoyoucomefrom.ovh
 whereismommy.gq
@@ -154735,3 +154736,4 @@ adswrapme.click
 flashonbeach.net
 adskeeper.co.uk
 adserver.adman.si
+safeframe.googlesyndication.com

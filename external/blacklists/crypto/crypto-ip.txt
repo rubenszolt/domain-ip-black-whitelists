@@ -5,7 +5,7 @@
 # Homepage: https://blocklist.site
 # Help: https://github.com/blocklistproject/lists/wiki/
 # License: https://unlicense.org
-# Total number of network filters: 23775
+# Total number of network filters: 23774
 #------------------------------------[SUPPORT]-------------------------------------
 # You can support by:
 # - reporting false positives
@@ -3300,7 +3300,7 @@
 0.0.0.0 cookiemapping.wrating.com
 0.0.0.0 cookies.qp.si
 0.0.0.0 cookiescript.info
-0.0.0.0 cookiescript.infos
+# 0.0.0.0 cookiescript.infos Issue 352
 0.0.0.0 cookiescriptcdn.pro
 0.0.0.0 cool-pool.net
 0.0.0.0 coop.pop.baofeng.com
